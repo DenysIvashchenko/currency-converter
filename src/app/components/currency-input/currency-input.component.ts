@@ -35,12 +35,5 @@ export class CurrencyInputComponent implements OnInit {
   public resetValue(): void {
     this.currencyConverter.setValue({ amount: Constants.AMOUNT_MIN, sale: Constants.SALE_RATE })
   }
-
-  onChange(): void {
-    this.change.emit();
-  }
-  onInput(): void {
-    this.change.emit();
-  }
     
 }

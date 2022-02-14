@@ -1,11 +1,11 @@
 <div class="currency-fild" [formGroup]="currencyConverter">
     <mat-form-field appearance="outline">
         <mat-label>Input</mat-label>
-        <input type="number" matInput placeholder="enter amount" formControlName="amount" (input)="onInput()">
+        <input type="number" matInput placeholder="enter amount" formControlName="amount">
     </mat-form-field>
     <mat-form-field appearance="outline">
         <mat-label>Select</mat-label>
-        <mat-select color="primary" formControlName="sale" (valueChange)="onChange()">
+        <mat-select color="primary" formControlName="sale">
           <mat-option *ngFor="let item of currencyRate$ | async"  value="{{item?.sale}}">{{item?.ccy}}</mat-option>
         </mat-select>
     </mat-form-field>
