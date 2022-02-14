@@ -1,0 +1,8 @@
+<header class="header">
+    <div class="header-container">
+      <h1>Currency Exchange</h1>
+      <div class="rate">
+        <app-currency-rate-output *ngFor="let rate of currencyRate$ | async" [rate]="rate" ></app-currency-rate-output>   
+      </div>
+    </div>
+</header>
