@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
 
       this.sumOne = this.amountOne * this.saleOne / this.saleTwo;
 
-     this.currencyValue2?.get('amount')?.setValue(this.sumOne);
+     this.currencyValue2?.get('amount')?.setValue(this.sumOne, { emitEvent: false });
 
     });
   }
@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
 
       this.sumTwo = this.amountTwo * this.saleTwo / this.saleOne;
 
-      // this.currencyValue2?.get('amount')?.setValue(this.sumTwo);
+      this.currencyValue2?.get('amount')?.setValue(this.sumTwo, { emitEvent: false });
 
     });
   }

@@ -1,8 +1,8 @@
 <app-header></app-header>
 <div class="container">
     <div class="currency-converter">
-        <app-currency-input (currencyOutput)="firstForm($event)" [sum]="sumTwo"></app-currency-input>
-        <app-currency-input (currencyOutput)="secondForm($event)" [sum]="sumOne"></app-currency-input>
+        <app-currency-input (currencyOutput)="firstForm($event)" [id]="'first'"></app-currency-input>
+        <app-currency-input (currencyOutput)="secondForm($event)" [id]="'second'"></app-currency-input>
     </div>  
 </div>
 <app-footer></app-footer>
