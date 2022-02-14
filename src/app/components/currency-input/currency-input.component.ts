@@ -15,8 +15,6 @@ export class CurrencyInputComponent implements OnInit {
 
   public formValue: FormGroup | undefined;
 
-  @Output() input: EventEmitter<any> = new EventEmitter();
-  @Output() change: EventEmitter<any> = new EventEmitter();
   @Output() currencyOutput: EventEmitter<any> = new EventEmitter();
   @Input() sum: number | undefined;
 
